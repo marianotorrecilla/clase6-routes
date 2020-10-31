@@ -1,9 +1,12 @@
-/*import React from 'react';
+import React from 'react';
 
 import {Card, Container, Row, Col} from 'react-bootstrap';
+import useGet from './../../services/useHTTP';
 
-const Personaje = () => {
-    
+const Personaje = ({ match }) => {
+    console.log(match.params.id);
+    const [personaje, isFetching, error] = useGet({url: `https://rickandmortyapi.com/api/character/${match.params.id}`,})
+    //const [personajes, isFetching, error] = useGet({url: "https://rickandmortyapi.com/api/character/",})
     return(
         <>
           <Container>
@@ -22,10 +25,10 @@ const Personaje = () => {
 
                   
               </Row>
-          </Container>
+         </Container>
 
         </>
     )
 };
 
-export default Personaje;*/
+export default Personaje;

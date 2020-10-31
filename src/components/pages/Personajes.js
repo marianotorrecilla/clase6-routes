@@ -11,7 +11,6 @@ const Personajes = () => {
               <Row>
               {personajes.map((personaje) => (
                       <Col md="4" lg="4" xs="12">
-                        
                           <Card key={personaje.id}>
                               <Card.Img variant="top" src={personaje.image}></Card.Img>
                               <Card.Body>
