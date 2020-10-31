@@ -34,7 +34,7 @@ export default App;
 //razón por la cual se decidio preguntar si la propiedad existe con el metodo hasOwnProperty(<nombre_propiedad>).
 //La info de como preguntar la obtuve de: https://www.jstips.co/es_es/javascript/check-if-a-property-is-in-a-object/
 //primera o segunda página que sale en google de la busqueda "como saber si una propiedad esta presente + javascript" nada muy sofisticado.
-//Posiblemente exita una mejor solución. Mientras más hagome doy cuenta que menos se :)
+//Posiblemente exista una mejor solución. Mientras más hago más me doy cuenta que menos se :)
 
 
     //<Route path="/alumnos/:id"  component={Alumno}/>
