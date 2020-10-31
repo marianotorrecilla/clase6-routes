@@ -2,6 +2,7 @@
 import './App.css';
 import {BrowserRouter as Router , Route, Link} from 'react-router-dom';
 import NavBar from './../src/components/layout/NavBar';
+import Navegacion from './../src/components/layout/Navegacion';
 import Home from './../src/components/pages/Home';
 import Personajes from './../src/components/pages/Personajes';
 import Personaje from './../src/components/pages/Personaje';
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
     <Router>
-      <NavBar />
+      {/*<NavBar />*/}
+      <Navegacion/>
       <Route path="/" exact component={Home} />
       <Route path="/personajes" exact component={Personajes} />
       <Route path="/personajes/:id"  component={Personaje} />

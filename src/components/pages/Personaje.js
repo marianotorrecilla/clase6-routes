@@ -7,12 +7,13 @@ const Personaje = ({ match }) => {
     console.log(match.params.id);
     const [personaje, isFetching, error] = useGet({url: `https://rickandmortyapi.com/api/character/${match.params.id}`,})
     //const [personajes, isFetching, error] = useGet({url: "https://rickandmortyapi.com/api/character/",})
+    console.log(personaje);
     return(
         <>
           <Container>
-              <Row>
-                      <Col md="4" lg="4" xs="12">
-                          <Card key={personaje.id}>
+              <Row className="mt-5 justify-content-center">
+                      <Col md="4" lg="4" xs="12" key={personaje.id} className="mt-5">
+                          <Card >
                               <Card.Img variant="top" src={personaje.image}></Card.Img>
                               <Card.Body>
                                   <Card.Title>{personaje.name}</Card.Title>

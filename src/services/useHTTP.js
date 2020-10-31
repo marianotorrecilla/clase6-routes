@@ -14,8 +14,8 @@ const useGet = ({url, params = {}, initialState = []}) => {
         const get = async () => {
             try {
                 const {data} = await axios.get(url,params);
-                console.log(url);
-                console.log(data);
+                //console.log(url);
+                //console.log(data);
                 if(data.hasOwnProperty('results')){
                     setData(data.results);
                 }
