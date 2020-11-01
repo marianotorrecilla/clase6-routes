@@ -1,0 +1,12 @@
+.titulo{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.texto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton{
+    background-color: rgb(97, 42, 97)
+}
